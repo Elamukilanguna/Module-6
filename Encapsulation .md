@@ -1,29 +1,33 @@
-# 🐍 Python OOP: Encapsulation with Private Members
+# 🐟 Method Overriding-Fish and Shark Class Inheritance in Python
 
-## 🎯 AIM
+## 🧠 AIM:
+To write a Python program that demonstrates class inheritance by creating a parent class `Fish` with a method `type`, and a child class `Shark` that overrides the `type` method.
 
-To implement **Encapsulation** in Python by defining a class `Rectangle` with **private member variables** `__length` and `__breadth`.
+## 📋 ALGORITHM:
 
----
+1. Define the `Fish` class with a method named `type()` that prints `"fish"`.
+2. Define the `Shark` class as a subclass of `Fish`, and override the `type()` method to print `"shark"`.
+3. Create an instance of the `Fish` class named `obj_goldfish`.
+4. Create an instance of the `Shark` class named `obj_hammerhead`.
+5. Use a `for` loop to iterate over both objects.
+6. Within the loop, call the `type()` method using the loop variable.
+7. Output will demonstrate method overriding: printing `"fish"` and `"shark"` accordingly.
 
-## 🧠 ALGORITHM
+## 💻 PROGRAM:
+```
+class Fish:
+    def type(self):
+        print("fish")
+class Shark(Fish):
+    def type(self):
+        print("shark")
+obj_goldfish = Fish()
+obj_hammerhead = Shark()
+for obj in (obj_goldfish, obj_hammerhead):
+    obj.type()
+```
+## OUTPUT
+![Screenshot 2025-05-07 142515](https://github.com/user-attachments/assets/8eb4270d-632e-4095-8cce-364bcf8027e7)
 
-1. **Define the Class**:
-   - Create a class `Rectangle` with two private attributes: `__length` and `__breadth`.
-
-2. **Initialize Variables**:
-   - Use the `__init__()` constructor to set initial values for `__length` and `__breadth`.
-
-3. **Print Values**:
-   - Display the private variables from within the class to demonstrate access.
-
-4. **Instantiate the Object**:
-   - Create an object of the `Rectangle` class to trigger the constructor.
-
----
-
-## 💻 Program
-
-## Output
-
-## Result
+## RESULT
+Thus,the python program Code Execution Successful
